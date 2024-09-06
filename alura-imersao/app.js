@@ -1,6 +1,12 @@
 function pesquisar() {
 
     let section = document.getElementById("resultados-pesquisa");
+    let campoPesquisa = document.getElementById("campo-pesquisa").value; 
+
+    let personagem = "";
+    let descricao = "";
+    let tags =   m "";
+
 
     let resultados = "";
 
@@ -10,7 +16,7 @@ function pesquisar() {
             <div class="item-resultado">
                 <h2>${dado.titulo}.</h2>
                 <p class="descricao-meta">${dado.descricao}</p>
-                <a href="https://www.max.com/br/pt/shows/last-of-us/93ba22b1-833e-47ba-ae94-8ee7b9eefa9a" target="_blank">${dado.link}</a>
+                <a href="${dado.link}" target="_blank"><button>Ver mais</button></a>
             </div>
             `    
     }

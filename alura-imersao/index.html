@@ -3,47 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/iconify.svg" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <title>RickMortverse</title>
   </head>
   <body>
+
+    <!-- integração do v-libras -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+    <!-- fim do v-libras -->
+
     <header>
-      <h1>Músicas Brasil</h1>
+      <div class="header">
+        <img src="img/logo1.svg" width="290px" alt="logo da página" />
+        <div class="btn-header">
+          <button class="btn-login">Login</button>
+          <button>Cadastrar</button>
+        </div>
+      </div>
     </header>
 
     <main>
-      <section>
-        <input type="text" placeholder="Digite uma música" />
-        <button onclick="pesquisar()">Pesquisar</button>
+      <section class="section">
+        <img src="img/font-nome.svg" class="logo-rick" alt="logo Rick and Morty" width="1300px"/>
+        <input type="text" placeholder="Digite algum personagem" id="campo-pesquisa"/>
+        <button onclick="pesquisar()" class="btn-sec">Buscar</button>
       </section>
 
-      <section class="resultados-pesquisa" id="resultados-pesquisa">
-        <!-- <div class="item-resultado">
-          <h2>Resultado</h2>
-          <p class="descricao-meta" >loLorem ipsum dolor sit amet consectetur adipisicing elit. Fugit maxime mollitia quidem. Ad similique doloremque optio veritatis consequatur, a
-          rchitecto sint dicta amet incidunt ratione, nostrum quos eligendi tempora quasi laudant</p>
-          <a href="https://www.max.com/br/pt/shows/last-of-us/93ba22b1-833e-47ba-ae94-8ee7b9eefa9a" target="_blank">Veja a série</a>
-        </div>
-
-        <div class="item-resultado">
-          <h2>Resultado</h2>
-          <p class="descricao-meta" >loLorem ipsum dolor sit amet consectetur adipisicing elit. Fugit maxime mollitia quidem. Ad similique doloremque optio veritatis consequatur, a
-          rchitecto sint dicta amet incidunt ratione, nostrum quos eligendi tempora quasi laudant</p>
-          <a href="https://www.max.com/br/pt/shows/last-of-us/93ba22b1-833e-47ba-ae94-8ee7b9eefa9a" target="_blank">Veja a série</a>
-        </div>
-
-        <div class="item-resultado">
-          <h2>Resultado</h2>
-          <p class="descricao-meta" >loLorem ipsum dolor sit amet consectetur adipisicing elit. Fugit maxime mollitia quidem. Ad similique doloremque optio veritatis consequatur, a
-          rchitecto sint dicta amet incidunt ratione, nostrum quos eligendi tempora quasi laudant</p>
-          <a href="https://www.max.com/br/pt/shows/last-of-us/93ba22b1-833e-47ba-ae94-8ee7b9eefa9a" target="_blank">Veja a série</a>
-        </div> -->
-      </section>
+      <section class="resultados-pesquisa" id="resultados-pesquisa"></section>
     </main>
 
     <footer>
-      <p>  RickMortverse &copy; 2024 - Todos direitos reservados</p>
-      <p>Entre me contato: gggg2@gmail.com</p>
+      <div class="footer">
+      <img src="img/moon.svg" alt="ícone da lua" width="22px"/>
+        <p style="font-size: 1.3rem"> by 
+          <a href="https://github.com/sara-lnas"><strong>Sara Letícia</strong></a>
+        </p>
+        <a href="https://github.com/sara-lnas">
+          <img src="img/github.svg" alt="logo GitHub" class="icon-media" />
+        </a>
+        <a href="https://www.linkedin.com/in/sara-let%C3%ADcia-7503b6264/">
+          <img src="img/linkedin.svg" alt="logo LinkedIn" class="icon-media" />
+        </a>
+      </div>
+      <p class="p-footer">
+        &copy; 2024 - RickMortverse. Todos os direitos reservados.
+      </p>
     </footer>
 
     <script src="dados.js"></script>
