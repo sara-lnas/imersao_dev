@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/iconify.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>RickMortverse</title>
+  </head>
+  <body>
+
+    <!-- integração do v-libras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
+      </script>
+      <!-- fim do v-libras -->
+  
+      <header>
+        <div class="header">
+          <img src="img/logo1.svg" width="290px" alt="logo da página" />
+          <div class="btn-header">
+            <button class="btn-login">Login</button>
+            <button>Cadastrar</button>
+          </div>
+        </div>
+      </header>
+
+    <main>
+      <section>
+        <img src="img/font-nome.svg" class="logo-rick" alt="logo Rick and Morty" width="38%"/>
+        <input type="text" placeholder="Digite algum personagem"id="campo-pesquisa"/>
+        <button onclick="pesquisar()" class="btn-sec">Buscar</button>
+      </section>
+
+      <section class="resultados-pesquisa" id="resultados-pesquisa"></section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <img src="img/moon.svg" alt="ícone da lua" width="18px" style="margin-right: 10px;"/>
+        <p style="font-size: 1.3rem"> by
+          <a href="https://github.com/sara-lnas"><strong>Sara Letícia</strong></a>
+        </p>
+        <div class="icon-media">
+            <a href="https://github.com/sara-lnas">
+              <img src="img/github.svg" alt="logo GitHub" />
+            </a>
+            <a href="https://www.linkedin.com/in/sara-let%C3%ADcia-7503b6264/">
+              <img src="img/linkedin.svg" alt="logo LinkedIn"/>
+            </a>
+        </div>
+      </div>
+      <p class="p-footer">
+        &copy; 2024 - RickMortverse. Todos os direitos reservados.
+      </p>
+    </footer>
+
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

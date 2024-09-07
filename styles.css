@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 /* Paleta de cores */
@@ -16,26 +16,27 @@
 }
 
 body {
+    background-color: #262C3A;
     font-family: "Poppins", sans-serif; 
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-     background-image: url('img/fundo-rick.jpg');
-        /* height: 90vh;  */
-        background-size: cover; 
-        background-position: center; 
-        background-repeat: no-repeat; 
-    }
-    
-    header {
-        background: linear-gradient(to right, #262C3A, #000B0E);
-        height: 4rem;
-        width: 100%;
-        padding: 1% 2% 4.5%;
-        position: relative;
-        top: 0; 
-    /* border-bottom: 22px solid linear-gradient(to right, 3% #02323D, 80% #32950D, #296F0E); */
+    height: 100vh;  
+    background-image: url('img/fundo-rick.jpg');
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+header {
+    background: linear-gradient(to right, #262C3A, #000B0E);
+    height: 4rem;
+    width: 100%;
+    padding: 1% 2% 4.5%;
+    position: fixed;
+    top: 0; 
+/* border-bottom: 22px solid linear-gradient(to right, 3% #02323D, 80% #32950D, #296F0E); */
 }
 
 header::after {
@@ -53,6 +54,7 @@ header::after {
     justify-content: space-between;
 }
 
+/* ------ Definições butões ------ */
 button {
     background-color: var(--green);
     color: #171D2C;
@@ -85,24 +87,27 @@ button:hover {
     background-color: var(--green);
     color: #171D2C;
 }
-/* fim do button-login */
+/* fim do button-login  */
 
-/* início seçoes */
+
+/* Estiliza as seções da página */
 section {
-    display: flex; 
+    display: flex;
     flex-direction: column; 
-    align-items: center;
-    margin-bottom: 3rem;
+    align-items: center; 
+    margin-bottom: 2rem;
 }
 
 section img {
-    padding: 3rem 37.5rem 2% 0;
+    padding: 0 0 1% 0;
+    margin: 7.93% 42rem 0 0;
 }
 
+/* Estiliza os inputs dentro das seções */
 section input {
     background-color: transparent;
-    margin-right: 43.75rem;
-    width: 34rem; 
+    margin-right: 41.75rem;
+    width: 29rem; 
     border: .0625rem solid var(--green); 
     padding: 1rem; 
     border-radius: .9375rem; 
@@ -110,7 +115,7 @@ section input {
     font-size: 1.2rem; 
     box-sizing: border-box; 
     outline: none;
-}        
+}
 
 input::placeholder {
     color: var(--green);
@@ -129,74 +134,86 @@ p {
     border-radius: .9375rem; 
     font-size: 1.2rem; 
     margin-top: -3.5rem;
+    margin-right: 3.125rem;
 }
 
 
 /*-------- seção dos personagens --------*/
 .resultados-pesquisa {
-    width: 48rem; 
-    /* height: 46vh; */
-    overflow-y: auto;
-    margin-top: 1rem; 
-    padding: 1rem; 
+    width: 56rem; 
+    height: 46vh; 
+    overflow-y: auto; 
+    margin-bottom: 5rem;
 }
 
 .resultados-pesquisa img {
-    margin: 30px 0px 0 2px;
+    margin: 0 1%;
     height: 16rem;
     padding: 0;
-    /* border: 2px solid rgb(0, 68, 255);
-    border-radius:2rem ; */
 }
 
+/* Estiliza cada item de resultado */
 .item-resultado {
+    background: var(--back-pers); 
     display: flex;
     flex-direction: row;
-    width: 40rem;
-    background: var(--back-pers); 
-    border-radius: 0.6rem; 
-    padding: 1rem; 
-    margin-bottom: 1rem; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-}
-
-h2 {
-    font-size: 188.5rem; 
-    font-weight: 400;
-    font-style: italic;
-    color: red;
+    width: 38rem;
+    border-radius: 1rem; 
+    padding: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 2.6rem; 
+    /* box-shadow: 0 2px 4px rgba(23, 22, 22, 0.1);  */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .item-infomacoes {
-    padding: 2rem;
-    /* background-color: blueviolet; */
-    display: flex;
-    flex-direction: column;
+    padding: 1.8rem;
 }
 
-.item-infomacoes button {
-    margin: 8px 0 10px;
-    font-size: 17px;
-    padding: 6px 30px;
-    border-radius: 0.6rem; 
+#name-personagem {
+    color: var(--bluezinho);
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    background-color: var(--green);
+    color: #171D2C;
+    font-size: 1rem;
+    text-decoration: none; 
+    border-radius: .7rem;
+    padding: 0.5rem 16px;
+    margin: 0;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s, transform 0.4s;
+    box-shadow: 0px 6px 6px rgba(26, 140, 51, 0.872);
+}
+
+a:hover {
+    background-color: #7fea58;
+    color: #171D2C;
+    transform: scale(1.3);
 }
 
 .descricao-meta {
     color: #CEF5FF;
-    margin: 0.5rem 0; 
+    text-align: justify;
+    margin: 0.4rem 0 .9rem;
 }
+
 
 /* Estiliza o rodapé da página */
 footer {
     background: linear-gradient(to right, #262C3A, #000B0E);
+    color: var(--bluezinho);
     font-size: 1rem;  
     width: 100%;
-    text-align: center;
-    color: var(--bluezinho);
-    position: absolute;
+    text-align: center; 
+    position: fixed; 
     bottom: 0; 
-    
+    height: 6rem;
 }
 
 footer::before {
@@ -211,35 +228,31 @@ footer::before {
 
 .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-
-    /* padding: 1.8% 0 0 0%; */
+    padding: 0.2% 0 0 0%;
     font-weight: 200;
-    margin-top: auto; 
+    margin-top: .5rem; 
 }
 
-.icon-media {
-        margin-right: 10px;
-}
 .footer a {
     text-decoration: none;
     color: var(--bluezinho);
-
 }
 
-.footer .icon-media {
-    height: 26px;
-    display: flex;
-    margin: 0 15px 0px 0px;
+.icon-media img {
+    margin-top: 6px;
+    margin-left: .9375rem;
+    height: 1.5rem;
 }
 
 .p-footer {
-    margin: 1.6%;
+    margin: 1rem;
 }
 
+/*  -----------------------------------------------------------  */
 /* Estilos para a barra de rolagem */
-   ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: .61rem;
 }
 
@@ -247,7 +260,6 @@ footer::before {
 ::-webkit-scrollbar-thumb {
     background-color: var(--green);
     border-radius: .7rem;
-
 }
 
 /* Estilos para a alça da barra de rolagem quando passa o mouse por cima */
@@ -260,56 +272,3 @@ footer::before {
     background-color: #343d4b;
 
 }
-
-
-/* @media (max-width: 768px) {
-    h1 {
-        font-size: 2rem; 
-        letter-spacing: 0.2rem; 
-    }
-
-    section input {
-        width: 25rem;
-        padding: 0.8rem;
-    }
-
-    .resultados-pesquisa {
-        width: 40rem; 
-        height: 40vh;
-    }
-
-    .item-resultado h2 {
-        font-size: 1.3rem; 
-    }
-}
-
-
-@media (max-width: 480px) {
-
-    h1 {
-        font-size: 1.8rem; 
-        letter-spacing: 0.1rem; 
-    }
-
-    section input {
-        width: 17rem; 
-    }
-
-    section button {
-        padding: 0.6rem 1rem; 
-        font-size: 0.9rem;
-    }
-
-    .resultados-pesquisa {
-        width: 90%; 
-        height: 50vh; 
-    }
-
-    .item-resultado h2 {
-        font-size: 1.1rem; 
-    }
-
-    footer {
-        font-size: 0.9rem; 
-    }
-} */
