@@ -12,7 +12,7 @@ O RickMortverse é um site interativo que te permite explorar o vasto universo d
 * **Design clean e divertido:** Com uma interface amigável, navegar pelo RickMortverse é uma experiência prazerosa.
 
  ### Exemplo da interface:
-![Tela inicial do RickMortverse](screenshot.png)
+[video.webm](https://github.com/user-attachments/assets/c0dad1d5-c7cb-453d-9b06-8f52def86a34)
 
 ## Tecnologias utilizadas:<br>
 ###
