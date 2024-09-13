@@ -2,7 +2,7 @@ let dadosPersonagens = [
     {
         foto : "img/persoangens/rick.svg",
         personagem: "Rick Sanchez",
-        descricao: "O cientista brilhante e niilista, Rick, e seu neto inseguro, embarcam em loucas aventuras por múltiplos universos.",
+        descricao: "O cientista brilhante e niilista, Rick, e seu neto inseguro, embarcam em loucas aventuras em múltiplos universos.",
         link: "https://rickandmorty.fandom.com/wiki/Rick_Sanchez",
         tags: "cientifico louco genio alcolico nilista satiro egoista impulsivo inventor interdimensional manipulador experimentador wubba lubba dub dub pickle rick"
     },
@@ -10,7 +10,7 @@ let dadosPersonagens = [
     {
         foto : "img/persoangens/morty.svg",
         personagem: "Morty Smith",
-        descricao: "O inseguro adolescente é o contraponto perfeitom avô em suas perigosas missões.",
+        descricao: "O inseguro adolescente é o contraponto perfeito tom avô em suas perigosas missões.",
         link: "https://rickandmorty.fandom.com/wiki/Morty_Smith",
         tags: "adolescente SciFi medroso inseguro vitima neto heroi descobridor aventureiro corajoso descobridor parceiro confidente dupla dinamica filho irmao"
     },
@@ -98,7 +98,7 @@ let dadosPersonagens = [
      {
         foto: "img/persoangens/krombopulos.svg",
         personagem: "Krombopulos Michael",
-        descricao: "É um assassino intergaláctico que se torna um aliado improvável e amogo de velho de cabeloa azuis.",
+        descricao: "É um assassino intergaláctico que se torna um aliado improvável e amigo do velho de cabelos azuis.",
         link: "https://rickandmorty.fandom.com/wiki/Krombopulos_Michael",
         tags: "assasino intergalatico alienigena inseto"
     }

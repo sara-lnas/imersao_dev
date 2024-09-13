@@ -31,7 +31,7 @@ function pesquisar() {
                 <div class="item-infomacoes"
                     <h2 id="name-personagem">${dado.personagem}</h2>
                     <p class="descricao-meta">${dado.descricao}</p>
-                    <a href="${dado.link}" target="_blank">Ver mais</a>
+                    <a href="${dado.link}" target="_blank" class="social-media">Ver mais</a>
                 </div>
             </div>
         `;
