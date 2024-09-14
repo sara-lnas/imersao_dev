@@ -34,4 +34,4 @@ Quer ajudar a melhorar o RickMortverse? Sinta-se à vontade para contribuir com 
 1. Clone este repositório: `git clone https://github.com/seu-usuario/RickMortyCharacterSearch.git`
 2. Abra o arquivo `index.html` em seu navegador.
 
-* **Ou acesse o link:** <i>[clique aqui]() <br>
+* **Ou acesse o link:** <i>[clique aqui](https://rickmortverse.vercel.app/) <br>
