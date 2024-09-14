@@ -11,7 +11,7 @@
     
     .header img {
         padding: 0.1rem 2.75rem;
-        margin-left: 17%;
+        margin-left: 18%;
     }
 
     .btn-header {
@@ -41,7 +41,7 @@
     .resultados-pesquisa {
         width: 38rem; 
         height: 45vh;
-        margin-left: 17rem;
+        margin-left: 13rem;
         margin-top: 2.5rem;
     }
 
@@ -101,7 +101,7 @@
     .resultados-pesquisa {
         width: 61%; 
         height: 78vh; 
-        margin-left: 24rem; 
+        margin-left: 18rem; 
         margin-bottom: -90px; 
     }
     
@@ -112,6 +112,6 @@
     }
 
     footer {
-        margin-left: 38%;
+        margin-left: 40%;
     }
 }
