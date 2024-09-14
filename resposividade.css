@@ -1,3 +1,48 @@
+/* Responsividade para celulares */
+@media screen and (max-width: 480px) {
+    .header img {
+        padding: 0 2.2rem;
+        margin-left: 32%;
+    }
+
+    .logo-rick {
+        width: 31rem;
+        margin: 25% 0 0.9rem 32% ;
+    }
+    
+    section input {
+        width: 18rem; 
+        font-size: 1.1rem;
+        margin-top: 1rem;
+        margin-left: 86%;
+    }
+    
+    .btn-sec {
+        width: 6rem;
+        margin-left: 65%;
+        padding: 0.7rem 0; 
+        margin-top: -3rem;
+    }
+
+    .resultados-pesquisa {
+        width: 61%; 
+        height: 78vh; 
+        margin-left: 18rem; 
+        margin-bottom: -90px; 
+    }
+    
+    .item-resultado img {
+        margin: 20px 2% 0;
+        height: 14rem;
+        padding: 0;
+    }
+
+    footer {
+        margin-left: 38%;
+    }
+}
+
+
 /* Responsividade */
 @media screen and (max-width: 768px) {
     body {
@@ -11,7 +56,7 @@
     
     .header img {
         padding: 0.1rem 2.75rem;
-        margin-left: 17%;
+        margin-left: 19%;
     }
 
     .btn-header {
@@ -70,52 +115,3 @@
     } 
 }
 
-
-/* Responsividade para celulares */
-@media screen and (max-width: 480px) {
-    .header img {
-        padding: 0 2.2rem;
-        margin-left: 30%;
-    }
-
-    .logo-rick {
-        width: 31rem;
-        margin: 25% 0 0.9rem 32% ;
-    }
-    
-    /* section {
-        background: red;
-        margin-top: 7%;
-    } */
-
-    section input {
-        width: 18rem; 
-        font-size: 1.1rem;
-        margin-top: 1rem;
-        margin-left: 86%;
-    }
-    
-    .btn-sec {
-        width: 6rem;
-        margin-left: 65%;
-        padding: 0.7rem 0; 
-        margin-top: -3rem;
-    }
-
-    .resultados-pesquisa {
-        width: 61%; 
-        height: 78vh; 
-        margin-left: 22rem; 
-        margin-bottom: -90px; 
-    }
-    
-    .item-resultado img {
-        margin: 20px 2% 0;
-        height: 14rem;
-        padding: 0;
-    }
-
-    footer {
-        margin-left: 38%;
-    }
-}
